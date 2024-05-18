@@ -10,8 +10,8 @@ let SUBUpdateTime = 6; //更改此次设置订阅更新时间，单位小时
 
 //在以下输入您的自建节点链接或订阅链接，请保留双引号
 let MainData = `
-https://kkk.053025.xyz/betray
-https://one.053025.xyz/kk
+https://one.betray.filegear-sg.me/kk
+https://kk.betray.filegear-sg.me/kk
 `
 
 //请将机场订阅链接填入上方
