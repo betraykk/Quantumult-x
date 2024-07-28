@@ -5,8 +5,8 @@
 免责声明：仅供学习 请勿传播，请勿在闲鱼售卖
 更新时间: 2023.11.15
 [rewrite_local]
-^https://newdrugs.dxy.cn url script-request-header https://raw.githubusercontent.com/Yu9191/Script/main/yyzscook.js
-https://newdrugs.dxy.cn/app/user/pro/stat? url script-response-body https://raw.githubusercontent.com/Yu9191/Script/main/yyzs2.js
+^https://newdrugs.dxy.cn url script-request-header https://raw.githubusercontent.com/betraykk/Quantumult-x/main/YYZS.js
+https://newdrugs.dxy.cn/app/user/pro/stat? url script-response-body https://raw.githubusercontent.com/betraykk/Quantumult-x/main/YYZS.js
 [mitm]
 hostname = newdrugs.dxy.cn
 */
