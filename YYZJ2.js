@@ -6,7 +6,6 @@
 更新时间: 2023.11.05.17.19
 [rewrite_local]
 ^https://newdrugs.dxy.cn url script-request-header https://github.com/betraykk/Quantumult-x/blob/main/YYZJ2.js
-https://newdrugs.dxy.cn/app/user/pro/stat? url script-response-body https://github.com/betraykk/Quantumult-x/blob/main/YYZJ2.js
 [mitm]
 hostname = newdrugs.dxy.cn
 */
