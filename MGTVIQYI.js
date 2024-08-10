@@ -38,8 +38,8 @@
 
 # 芒果tv //*.mgtv.com
 # 会员解锁 (国区,美区,平板端)
-^https:\/\/mobile-stream\.api\.mgtv\.com\/v1\/video\/source\? url script-request-header https://raw.githubusercontent.com/Yu9191/Rewrite/main/MGTV.js
-^https:\/\/(mobile|pad|pcc)\.api\.mgtv\.com\/v8\/video\/getSource\? url script-request-header https://raw.githubusercontent.com/Yu9191/Rewrite/main/MGTV.js
+^https:\/\/mobile-stream\.api\.mgtv\.com\/v1\/video\/source\? url script-request-header https://raw.githubusercontent.com/betraykk/Quantumult-x/main/mgtv1.js
+^https:\/\/(mobile|pad|pcc)\.api\.mgtv\.com\/v8\/video\/getSource\? url script-request-header https://raw.githubusercontent.com/betraykk/Quantumult-x/main/mgtv1.js
 # 无用请求
 ^http:\/\/[\d\.]+:\d{5}\/\?cmd=indexes url reject
 # 首页左上角推广
