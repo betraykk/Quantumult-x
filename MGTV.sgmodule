@@ -1,25 +1,28 @@
-#!name=芒果TV会员
-#!desc=芒果TV会员
+#!name=MGTV
+#!desc=MGTV
 
 [URL Rewrite]
+
 #播放页开通提示移除
 http://vip.bz.mgtv.com/client/dynamic_entry - reject
 
 [Script]
-mgtv1 = type=http-request, pattern=^http[s]?:\/\/mobile\.api\.mgtv\.com\/v[0-9]\/(playlist|video\/album|video\/relative|video\/list).*$, script-path=https://raw.githubusercontent.com/betraykk/Quantumult-x/main/mgtv2.js, timeout=60
 
-MGTV = type=http-request, pattern=https://mobile-stream.api.mgtv.com/v1/video/source?, script-path=https://raw.githubusercontent.com/betraykk/Quantumult-x/main/mgtv1.js, timeout=60
+mgtv1_8 = type=http-request, pattern=^http[s]?:\/\/mobile\.api\.mgtv\.com\/v[0-9]\/(playlist|video\/album|video\/relative|video\/list).*$, script-path=https://raw.githubusercontent.com/Yu9191/Rewrite/main/mgtv1.js, timeout=60, script-update-interval=0
 
-mgtv = type=http-response, pattern=https://nuc.api.mgtv.com/GetUserInfo, script-path=https://raw.githubusercontent.com/betraykk/Quantumult-x/main/mgtv1.js, requires-body=true, max-size=-1, timeout=60
+MGTV_9 = type=http-request, pattern=https://mobile-stream.api.mgtv.com/v1/video/source?, script-path=https://raw.githubusercontent.com/Yu9191/Rewrite/main/MGTV.js, timeout=60, script-update-interval=0
 
-mgtv = type=http-response, pattern=https://mobile-stream.api.mgtv.com/v1/video/source, script-path=https://raw.githubusercontent.com/betraykk/Quantumult-x/main/mgtv1.js, requires-body=true, max-size=-1, timeout=60
+mgtv_10 = type=http-response, pattern=https://nuc.api.mgtv.com/GetUserInfo, requires-body=true, max-size=3145728, script-path=https://raw.githubusercontent.com/Yu9191/Rewrite/main/mgtv.js, timeout=60, script-update-interval=0
+
+mgtv_11 = type=http-response, pattern=https://mobile-stream.api.mgtv.com/v1/video/source, requires-body=true, max-size=3145728, script-path=https://raw.githubusercontent.com/Yu9191/Rewrite/main/mgtv.js, timeout=60, script-update-interval=0
 
 #港区
-MGTV = type=http-request, pattern=^https://mobile.api.mgtv.com/v8/video/getSource, script-path=https://raw.githubusercontent.com/betraykk/Quantumult-x/main/mgtv1.js, timeout=60
+MGTV_13 = type=http-request, pattern=^https://mobile.api.mgtv.com/v8/video/getSource, script-path=https://raw.githubusercontent.com/Yu9191/Rewrite/main/MGTV.js, timeout=60, script-update-interval=0
 
-MGTV = type=http-request, pattern=https://pad.api.mgtv.com/v8/video/getSource, script-path=https://raw.githubusercontent.com/betraykk/Quantumult-x/main/mgtv1.js, timeout=60
-#mac
-MGTV = type=http-request, pattern=https://pcc.api.mgtv.com/video/getSource, script-path=https://raw.githubusercontent.com/betraykk/Quantumult-x/main/mgtv1.js, timeout=60
+MGTV_16 = type=http-request, pattern=https://pcc.api.mgtv.com/video/getSource, script-path=https://raw.githubusercontent.com/Yu9191/Rewrite/main/MGTV.js, timeout=60, script-update-interval=0
+
+MGTV_17 = type=http-request, pattern=https://pad.api.mgtv.com/v8/video/getSource, script-path=https://raw.githubusercontent.com/Yu9191/Rewrite/main/MGTV.js, timeout=60, script-update-interval=0
 
 [MITM]
-hostname = %APPEND% *.mgtv.com, pad.api.mgtv.com, pcc.api.mgtv.com
+
+hostname = %APPEND% *.mgtv.com,pad.api.mgtv.com,pcc.api.mgtv.com
