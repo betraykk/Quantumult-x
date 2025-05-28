@@ -342,6 +342,11 @@
 # 同花顺至尊版 感谢【梭哈 All in】分享
 ^https?:\/\/stat\.10jqka\.com\.cn\/q\?ld=mobile&id=ad url reject-dict
 
+# > 蜗牛睡眠
+# hostname = snailsleep.net
+^https?:\/\/snailsleep\.net\/snail\/v\d\/adTask\/ url reject
+^https?:\/\/snailsleep\.net\/snail\/v\d\/screen\/qn\/get\? url reject
+
 # > 雪球
 # hostname = api.xueqiu.com, open.xueqiu.com, stock.xueqiu.com, 39.103.79.14, 39.106.97.84, 47.95.49.75, 101.201.62.20, 101.201.62.26, 101.201.175.228, 124.250.48.3, 182.92.145.50, 182.92.251.113
 # 感谢【可莉】分享
