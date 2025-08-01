@@ -194,13 +194,6 @@
 ^https?:\/\/dl\.app\.gtja\.com\/dzswem\/kvController url reject-200
 #^https?:\/\/dl[0-9]{1}\.app\.gtja\.com\/dzswem\/kvController url reject-200
 
-# > 谷歌
-# hostname = *.googleapis.com, pagead2.googlesyndication.com
-# 如开启可自行添加主机名，但似乎已不可MITM
-^https?:\/\/.+\.googleapis.com/.+ad_break url reject-img
-^https?:\/\/.+\.googleapis.com/.+log_event url reject-img
-^https?:\/\/.+\.googleapis.com/adsmeasurement url reject-img
-^https?:\/\/pagead2\.googlesyndication\.com\/pagead\/ url reject-img
 
 # > 虎牙直播
 # hostname = cdn.wup.huya.com, business.msstatic.com, cdnfile1.msstatic.com, live-ads.huya.com
